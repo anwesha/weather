@@ -1,7 +1,7 @@
 # weather
 Simple weather module
 
-### SEE DEMO
+#### Demp Page
 http://anweshadeb.com/prototype/weather/weather.html
 
 #### Type 1
