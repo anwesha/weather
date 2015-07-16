@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Information</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+	<div id="page">
+		<h1 id="page-hd"><span>How's the weather?</span></h1>
+
+		<div id="page-bd">
+			
+			<!-- Module 1 !-->
+			<div class="mod">
+				<div class="weather-mod-info">
+					<span class="num">1</span>
+					<p>
+						Has a simple dropdown of finite list of locations.
+						Shows pre formatted weather info provided by the api
+					</p>
+				</div>
+
+				<div id="weather-from-dd" class="weather-mod">
+					<div class="dropdown-cont">
+						<p class="cur-location">New York</p>
+						<ul class="loc-list">
+			               <li data-value="new york" class="selected">New York</li>
+			               <li data-value="los angeles">Los Angeles</li>
+			               <li data-value="london">London</li>
+			               <li data-value="Paris">Paris</li>
+		             	</ul>
+					</div>
+					<div class="bd">
+						<div class="pre-desc"></div>
+						<div class="loading-ov">
+							<p>Patience! Weather info loading</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Module 2 !-->
+			<div class="mod">
+				<div class="weather-mod-info">
+					<span class="num">2</span>
+					<p>
+						Has a simple dropdown of finite list of locations.
+						Custom weather info display
+					</p>
+				</div>
+
+				<div id="weather-from-dd-custom" class="weather-mod">
+					<div class="bgimg"></div>
+					<div class="dropdown-cont">
+						<p class="cur-location">New York</p>
+						<ul class="loc-list">
+			               <li data-value="new york" class="selected">New York</li>
+			               <li data-value="los angeles">Los Angeles</li>
+			               <li data-value="london">London</li>
+			               <li data-value="Paris">Paris</li>
+		             	</ul>
+					</div>
+					<div class="bd">
+						<p class="loc"></p>
+						<p class="date"></p>
+						<p class="conditions"><span class="condition"></span><span class="temp"></span></p>
+						<i class="icon"></i>	
+						<div class="loading-ov">
+							<p>Patience! Weather info loading</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="weather.js"></script>
+</html>
